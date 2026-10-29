@@ -21,6 +21,8 @@ class Settings(BaseSettings):
     meta_graph_version: str = "v23.0"
     linkedin_client_id: str = ""
     linkedin_client_secret: str = ""
+    instagram_app_id: str = ""
+    instagram_app_secret: str = ""
     linkedin_redirect_uri: str = "http://127.0.0.1:8000/oauth/linkedin/callback"
     model_config = SettingsConfigDict(env_file=".env", extra="ignore", case_sensitive=False)
     @property
